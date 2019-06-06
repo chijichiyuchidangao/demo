@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>作业7</title>
+	<style>
+		*{
+			padding: 0px;
+			margin:0px;
+		}
+		.head{
+			width:100%;
+			height: 30px;
+			background-color:rgb(244,244,244);
+			position:relative; 
+		}
+		#headf{
+			position:absolute;
+			left:180px;
+			top:6px;
+			font-size: 12px;	
+		}
+		#heads{
+			position: absolute;
+			left: 350px;
+			top: 6px;
+			font-size: 12px;
+		}
+		#headt{
+			position: absolute;
+			left:1147px;
+			top:6px;
+			font-size: 12px;
+		}
+		.head img{
+			position: absolute;
+			left: 325px;
+			top: 6px;
+		}
+		.headf{
+			position: absolute;
+			left:1300px;
+			top: 6px;
+			font-size: 12px;
+		}
+		.headf a{
+			text-decoration: none;
+			color: rgb(51,51,51);
+		}
+		.concent{
+			height: 811px;
+			width: 100%;
+			background-color: rgb(251,251,251);
+			position: relative;
+		}
+		#pic{
+			position: absolute;
+			left: 181px;
+			top: 18px;
+		}
+		#inp1{
+			width: 405px;
+			height:36px;
+			position: absolute;
+			left:564px;
+			top:38px;
+			border:2px  solid rgb(248,56,56);
+			color:rgb(212,212,212);
+		}
+		.sousuo{
+			width: 92px;
+			height: 40px;
+			position: absolute;
+			top:38px;
+			left:971px;
+			background-color: rgb(248,56,56);
+		}
+		.sousuo a{
+			text-decoration: none;
+			color: rgb(255,255,255);
+			font-size: 16px;
+			position: absolute;
+			left:30px;
+			top: 10px;
+		}
+		.gwc{
+			width: 147px;
+			height:38px;
+			background-color: rgb(245,245,245);
+			border:1px solid rgb(227,227,227);
+			position:absolute;
+			left:1224px;
+			top:40px; 
+		}
+		.gwc img{
+			position: absolute;
+			left:24px;
+			top:8px;
+		}
+		#gwc1{
+			position: absolute;
+			left: 49px;
+			top: 11px;
+			font-size: 14px;
+		}
+		.list1 {
+			position: absolute;
+			left: 155px;
+			top:120px;
+			}
+		.list1 li{
+			list-style-type:none;
+			display:inline-block;
+			text-align: center;
+			line-height: 32px;
+			width: 144px;
+		}
+		.list1 a:link{
+			text-decoration: none;
+			color: rgb(51,51,51);
+			font-size: 16px;
+		}
+		.list1 a:hover{
+			font-size: 16px;
+			color: rgb(255,255,255);
+			padding:1px 10px;
+			padding-color:rgb(253,3,4);
+			width: 89px;
+			height: 33px;
+			background-color: rgb(253,3,4);
+			border-width:4px;
+			border-style: solid;
+			border-radius: 5px;
+			border-color: rgb(253,3,4);
+		}
+		.heng{
+			position: absolute;
+			top:156px;
+			background-color: rgb(224,3,4);
+			height: 3px;
+			width: 100%;
+		}
+		#now{
+			font-size: 14px;
+			position: absolute;
+			top: 190px;
+			left:180px;
+		}
+		.quanbufenlei{
+			width: 215px;
+			height:43px;
+			position: absolute;
+			top: 225px;
+			left:180px;
+			background-color: rgb(255,255,255);
+		}
+		.quanbufenlei p{
+			font-size: 16px;
+			position: absolute;
+			top: 12px;
+			left:75px;
+		}
+		.fenlei{
+			height: 510px;
+			width:215px;
+			position: absolute;
+			left:180px;
+			top:280px;
+			background-color:rgb(255,255,255); 
+		}
+		#shi{
+			color: rgb(255,44,24);
+			font-size: 14px;
+			position: absolute;
+			left: 76px;
+			top:18px;
+		}
+		#shen{
+			font-size: 14px;
+			position: absolute;
+			left:76px;
+			top: 63px;
+		}
+		.thing{
+			width: 974px;
+			height:563px;
+			background-color: rgb(255,255,255);
+			position: absolute;
+			top: 225px;
+			left:407px;
+		}
+		.list2 li{
+			height: 252px;
+			width:220px;
+			border:1px solid rgb(219,219,219);
+			margin-top:17px;
+			margin-left: 17px;
+			display: inline-block;
+			float: left;
+			position: relative;
+		}
+		.lajiao1{
+			font-size: 14px;
+			position: absolute;
+			top:196px;
+			left: 59px;	
+			color: rgb(163,163,163);	
+		}
+		.lajiao2{
+			font-size: 14px;
+			position: absolute;
+			top:226px;
+			left: 84px;
+		}
+		.last{
+			height: 247px;
+			width: 100%;
+			background-color: rgb(46,46,46);
+			position: relative;
+		}
+		.list3{
+			position: absolute;
+			top: 5px;
+			left:87px;
+		}
+		.list3 li{
+			display: inline-block;
+			height:44px;
+			width:280px;
+			text-align: center;
+		}
+		.list3 a{
+			text-decoration: none;
+			color: rgb(235,235,235);
+		}
+		.list4{
+			position: absolute;
+			left: 190px;
+			top: 49px;
+		}
+		.list4 li{
+			display: inline-block;
+			width: 283px;
+			height: 31px;
+		}
+		.list4 a{
+			text-decoration: none;
+			color: rgb(235,235,235);
+			font-size: 14px;
+		}
+		.xian{
+			position: absolute;
+			left: 180px;
+			top: 150px;
+			width: 1250px;
+			height: 1px;
+			background-color: rgb(69,69,69);
+		}
+		#first{
+			font-size: 14px;
+			color: rgb(164,164,164);
+			position: absolute;
+			left: 508px;
+			top: 178px;
+		}
+		#second{
+			font-size: 14px;
+			color: rgb(164,164,164);
+			position: absolute;
+			top: 212px;
+			left: 500px;
+		}
+	</style>
+</head>
+<body>
+	<div class="head">
+		<p id="headf">我的收藏 E族之家手机版</p>
+		<img src="qq.jpg">
+		<p id="heads">328203328</p>
+		<p id="headt">扫描加入 欢迎来到E族之家，</p>
+		<div class="headf"><a href="#">请登录</a>丨<a href="#">注册</a></div>
+	</div>
+	<div class="concent">
+		<img src="ez.jpg" id="pic">
+		<input type="text" name="inp1" value="     请输入关键字！" id="inp1">
+		<div class="sousuo"><a href="#">搜索</a></div>
+		<div class="gwc">
+			<img src="gwc.jpg">
+			<p id="gwc1">购物车(<span style="color:rgb(214,78,78)">0</span>)件</p>
+		</div>
+		<ul class="list1">
+			<li><a href="#">首页</a></li>
+			<li><a href="#">E族生活</a></li>
+			<li><a href="#">E族服务</a></li>
+			<li><a href="#">E族爱心</a></li>
+		</ul>
+		<div class="heng"></div>
+		<p id="now">当前位置：E族爱心>食品</p>
+		<div class="quanbufenlei">
+			<img src="捕获.PNG" style="position:absolute;top:12px;left:32px;">
+			<p>全部分类</p>
+		</div>
+		<div class="fenlei">
+			<p id="shi">>食品</p>
+			<p id="shen">>生活用品</p>
+		</div>
+		<div class="thing">
+			<ul class="list2">
+				<li>
+					<img src="lajiao.jpg" style="position:absolute;left:60px;top:28px">
+					<p class="lajiao1">精品辣椒100g</p>
+					<p class="lajiao2">¥90.00</p>
+				</li>
+				<li>
+					<img src="bxg.jpg" style="position:absolute;left:40px;top:28px">
+					<p class="lajiao1">特级百香果3斤</p>
+					<p class="lajiao2">¥90.00</p>
+				</li>
+				<li>
+					<img src="jiu.jpg" style="position:absolute;left:90px;top:13px">
+					<p class="lajiao1">万威啤酒500ml</p>
+					<p class="lajiao2">¥90.00</p>
+				</li>
+				<li>
+					<img src="songzi.jpg" style="position:absolute;left:34px;top:30px">
+					<p class="lajiao1">万威啤酒500ml</p>
+					<p class="lajiao2">¥90.00</p>
+				</li>
+				<li><img src="lajiao.jpg" style="position:absolute;left:60px;top:28px">
+					<p class="lajiao1">精品辣椒100g</p>
+					<p class="lajiao2">¥90.00</p>
+				</li>
+				<li>
+					<img src="bxg.jpg" style="position:absolute;left:40px;top:28px">
+					<p class="lajiao1">特级百香果3斤</p>
+					<p class="lajiao2">¥90.00</p>
+				</li>
+				<li>
+					<img src="jiu.jpg" style="position:absolute;left:90px;top:13px">
+					<p class="lajiao1">万威啤酒500ml</p>
+					<p class="lajiao2">¥90.00</p>
+				</li>
+				<li>
+					<img src="songzi.jpg" style="position:absolute;left:34px;top:30px">
+					<p class="lajiao1">万威啤酒500ml</p>
+					<p class="lajiao2">¥90.00</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="last">
+		<ul class="list3">
+			<li><a>新手上路</a></li>
+			<li><a>配送方式</a></li>
+			<li><a>购物指南</a></li>
+			<li><a>售后服务</a></li>
+			<li><a>关于我们</a></li>
+		</ul>
+		<ul class="list4">
+			<li><a>售后流程</a></li>
+			<li><a>货到付款区域</a></li>
+			<li><a>常见问题</a></li>
+			<li><a>退换货原则</a></li>
+			<li style="width: 90px;height: 31px;"><a>网站故障报告</a></li>
+			<li><a>购物流程</a></li>
+			<li><a>配送支付查询</a></li>
+			<li><a>订购流程</a></li>
+			<li><a>售后服务保证</a></li>
+			<li style="width: 90px;height: 31px;"><a>联系我们</a></li>
+			<li><a>订购方式</a></li>
+			<li><a>支付方式说明</a></li>
+			<li><a>注册新会员</a></li>
+			<li><a>退货流程</a></li>
+			<li style="width: 90px;height: 31px;"><a>投诉与建议</a></li>
+		</ul>
+		<div class="xian"> </div>
+		<p id="first">E族生活丨居家维修保养丨住宿优惠信息丨出行接送丨E族活动丨E族爱心丨积分商城</p>
+		<p id="second">©2017-2018 E族之家 版权所有，并保留所有权利。ICP备案证书号：粤ICP备17127392号</p>
+	</div>
+	</body>
+</html>
